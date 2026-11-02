@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanawan Lertmongkolnam · Card</title>
+<meta name="description" content="Thanawan Lertmongkolnam, Researcher at the Puey Ungphakorn Institute for Economic Research (PIER).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Caveat:wght@600&display=swap">
+<style>
+  :root {
+    --navy: #0B1F33;
+    --teal: #0E5E6F;
+    --mint: #7FC8B8;
+    --cream: #FBFAF6;
+    --ink: #0B1F33;
+    --muted: #5B6676;
+    --line: #E3DED3;
+    --serif: 'Instrument Serif', Georgia, serif;
+    --sans: 'Geist', 'Helvetica Neue', Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    background-color: var(--navy);
+    background-image: radial-gradient(#1D3550 1.2px, transparent 1.2px);
+    background-size: 24px 24px;
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  main { width: min(440px, 100%); }
+  .hello { display: block; margin: 0 0 18px 6px; font-family: 'Caveat', cursive; font-size: 30px; color: #F5F3EE; transform: rotate(-2deg); }
+  .stack { position: relative; }
+  .back { position: absolute; inset: 0; background: var(--teal); border-radius: 22px; transform: rotate(-4deg) translate(-10px, 8px); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); }
+  .card { position: relative; background: var(--cream); border-radius: 22px; box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4); padding: 28px 26px 26px; display: flex; flex-direction: column; gap: 26px; }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+  .head img { height: 42px; width: auto; }
+  .city { font-size: 13px; color: var(--muted); }
+  .id { display: flex; flex-direction: column; gap: 6px; }
+  h1 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(34px, 9vw, 42px); line-height: 1; }
+  .title { font-size: 16px; font-weight: 600; color: var(--teal); }
+  .org { font-size: 14px; line-height: 1.45; color: var(--muted); }
+  .actions { display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 18px; border-radius: 999px; font: 600 15px var(--sans); text-decoration: none; cursor: pointer; }
+  .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .btn-save { border: 0; background: var(--navy); color: #FFFFFF; }
+  .btn-outline { border: 1.5px solid var(--navy); background: transparent; color: var(--navy); }
+  .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; }
+  .btn-copy { min-width: 124px; border: 1.5px solid var(--line); background: #FFFFFF; color: var(--navy); }
+  .btn-copy.is-done { border-color: #2F7A4D; background: #2F7A4D; color: #FFFFFF; }
+  .row .btn-outline { min-width: 0; }
+  .email { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .btn:focus-visible { outline: 2px solid var(--mint); outline-offset: 3px; }
+  @media (hover: hover) {
+    .btn-save:hover { background: var(--teal); }
+    .btn-outline:hover { background: var(--navy); color: #FFFFFF; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <span class="hello">here's my card</span>
+  <div class="stack">
+    <div class="back" aria-hidden="true"></div>
+    <article class="card">
+      <div class="head">
+        <img src="logo-pier.png" alt="PIER">
+        <span class="city">Bangkok, Thailand</span>
+      </div>
+      <div class="id">
+        <h1>Thanawan Lertmongkolnam</h1>
+        <span class="title">Researcher</span>
+        <span class="org">Puey Ungphakorn Institute for Economic Research</span>
+      </div>
+      <div class="actions">
+        <a class="btn btn-save" href="thanawan-lertmongkolnam.vcf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+          Save to contacts
+        </a>
+        <div class="row">
+          <a class="btn btn-outline" href="mailto:Lertmongkolnam.t@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
+            <span class="email">Email me</span>
+          </a>
+          <button class="btn btn-copy" type="button" data-email="Lertmongkolnam.t@gmail.com">Copy email</button>
+        </div>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/thanawan-lertmongkolnam/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          Connect on LinkedIn
+        </a>
+      </div>
+    </article>
+  </div>
+</main>
+<script>
+(function () {
+  var btn = document.querySelector('.btn-copy');
+  var email = btn.getAttribute('data-email');
+  function done() { btn.textContent = '✓ Copied'; btn.classList.add('is-done'); }
+  btn.addEventListener('click', function () {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(email).then(done, function () { window.prompt('Copy email:', email); });
+    } else {
+      window.prompt('Copy email:', email);
+    }
+  });
+})();
+</script>
+</body>
+</html>
